@@ -1,8 +1,8 @@
 /*------------------------------
   container
 ------------------------------*/
-@use "../base/variable" as *;
-@use "../base/mixin" as *;
+@use '../base/variable' as *;
+@use '../base/mixin' as *;
 
 .container {
   max-width: $width;

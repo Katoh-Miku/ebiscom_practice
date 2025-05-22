@@ -14,28 +14,153 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/script/libs/scroll-polyfill.js" defer></script>
     <script src="./assets/script/libs/scroll.js" defer></script>
 
     <script src="./assets/script/main.js" defer></script>
   </head>
   <body>
-    <div class="site_wrapper">
-      <header></header>
-      <nav></nav>
-      <main>
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/image/logo-box.svg" alt="H-Builder" width="93" height="76" />
+      </div>
+      <button class="navbtn" onclick="document.querySelector('body').classList.toggle('is-open')">
+        <span class="navbtn__bar"></span>
+        <span class="u-visually-hidden">menu</span>
+      </button>
+
+      <nav class="nav center">
+        <img src="./assets/image/logo.svg" alt="H-Builder" class="logo" />
+        <ul class="menu">
+          <li><a href="#">住まいの事例</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero decor">
         <div class="container">
-          <p>Hello world!!</p>
-          <img src="./assets/image/image-1.jpg" alt="サンプル画像" />
+          <div class="text">
+            <div class="heading">
+              <h1 class="heading-lv1">Earthy Home</h1>
+              <p class="subtitle">自然が身近になる住まい</p>
+            </div>
+            <p class="body">
+              人は自然を感じるだけでリラックスできると言われています。だからこそ、暮らしに自然を取り込むことにこだわっています。
+            </p>
+          </div>
+          <figure class="photo01">
+            <img class="cover-size" src="assets/image/hero01.jpg" alt="" width="1500" height="1063" />
+          </figure>
+          <figure class="photo02">
+            <img class="cover-size" src="assets/image/hero02.jpg" alt="" width="1500" height="1416" />
+          </figure>
         </div>
-      </main>
-      <footer></footer>
-    </div>
+      </section>
+
+      <section class="section sec01 decor">
+        <div class="container">
+          <div class="text">
+            <div class="heading">
+              <div class="num">01</div>
+              <h2 class="heading-lv2">ナチュラルに暮らす</h2>
+            </div>
+            <div class="body">
+              <p>自然にも、自分にも優しく暮らしたい。それを無理なくサポートしてくれる仕組みがここにあります。</p>
+              <a href="#" class="more">More</a>
+            </div>
+            <figure class="photo01">
+              <img class="cover-size" src="assets/image/natural01.jpg" alt="" width="1500" height="1066" />
+            </figure>
+            <figure class="photo02">
+              <img class="cover-size" src="assets/image/natural02.jpg" alt="" width="1500" height="1065" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sec02 decor">
+        <div class="container">
+          <div class="text">
+            <div class="heading">
+              <div class="num">02</div>
+              <h2 class="heading-lv2">快適であることの心地良さ</h2>
+            </div>
+            <div class="body">
+              <p>朝は爽やかに目覚め、1日の終わりにはゆったりとくつろげる。そんな快適な空間を作り出します。</p>
+              <a href="#" class="more">More</a>
+            </div>
+          </div>
+          <figure class="photo01">
+            <img class="cover-size" src="assets/image/comfort01.jpg" alt="" width="1580" height="1099" />
+          </figure>
+          <figure class="photo02">
+            <img class="cover-size" src="assets/image/comfort02.jpg" alt="" width="1500" height="1099" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section sec03 decor">
+        <div class="container">
+          <div class="text">
+            <div class="heading">
+              <div class="num">03</div>
+              <h2 class="heading-lv2">日常になるからこそ小さなことも大切にしたい</h2>
+            </div>
+            <p class="body">
+              住まいの好みやこだわりは人それぞれ。日常になるからこそ、あんなことはもちろん、こんなことにも。細かなところにまでお応えします。
+            </p>
+          </div>
+          <ul class="posts">
+            <li>
+              <a href="#">
+                <figure><img class="cover-size" src="assets/image/list01.jpg" alt="" width="1500" height="1063" /></figure>
+                <h3>限られたスペースにも自然を取り入れていくテクニックのアレコレ</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img class="cover-size" src="assets/image/list02.jpg" alt="" width="1286" height="1047" /></figure>
+                <h3>おまかせ＆ほったらかしでOKな楽ちんホームキーピングの秘密</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img class="cover-size" src="assets/image/list03.jpg" alt="" width="1574" height="1036" /></figure>
+                <h3>大切なモノがたくさん増えてもどんと来いな収納スペース</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="cta center">
+        <div class="cta-btn">
+          <a href="#">住まいの事例をもっと見る</a>
+        </div>
+        <p>登録なしでご覧いただけます</p>
+      </div>
+    </main>
+
+    <footer class="footer center">
+      <img src="./assets/image/logo.svg" alt="H-Builder" class="logo" />
+      <ul class="menu">
+        <li><a href="#">住まいの事例</a></li>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

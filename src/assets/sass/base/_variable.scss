@@ -10,6 +10,7 @@ $width_md: 800px;
 
 // 標準font-family
 $font_sans: 'Noto Sans JP', sans-serif;
+$font_lora: 'Lora', serif;
 
 //白黒
 $c_white: #ffffff;
@@ -24,9 +25,9 @@ $c_gray2: #707070;
 // $c_gray5: #505050;
 
 //キーカラー
-$c_key1: #ceb967;
-$c_key2: #f5efd7;
-$c_key3: #a88e25;
+$c_key1: #96a199;
+$c_key2: #e9ece8;
+$c_key3: #b75865;
 
 //黄色系
 // $c_yellow1: #FFD800;
@@ -46,9 +47,16 @@ $c_red1: #f7320e;
 // $c_red3: #FCF2F2;
 
 // 標準テキストカラー
-$c_text: #341e12;
+$c_text: #54603f;
 
 // リンクカラー
 $c_link: $c_text;
-$c_hover: $c_key3;
-$c_active: $c_key3;
+$c_hover: $c_key1;
+$c_active: $c_key1;
+
+// 基本のサイズ
+$size1: 5vw;
+$size1-half: calc($size1 / 2);
+$size2: calc($size1 * 2);
+$size3: calc($size1 * 3);
+$size4: calc($size1 * 4);
