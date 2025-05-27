@@ -34,7 +34,7 @@
 // }
 // -> 幅1200pxの時：32px、幅375pxの時：16px
 
-@function clamp($minFontSize, $maxFontSize, $minViewport, $maxViewport, $base: 16) {
+@function fz_clamp($minFontSize, $maxFontSize, $minViewport, $maxViewport, $base: 16) {
   $slopeSize: ($maxFontSize - $minFontSize) / ($maxViewport - $minViewport);
   $changingSize: $slopeSize * 100;
   $fixedSize: $minFontSize - $slopeSize * $minViewport;

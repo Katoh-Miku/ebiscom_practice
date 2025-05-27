@@ -1,6 +1,5 @@
 @use '../base/variable' as *;
 @use '../base/mq' as *;
-// @use '../base/function' as *;
 @use '../base/mixin' as *;
 
 /*------------------------------
@@ -8,7 +7,7 @@
 ------------------------------*/
 
 .heading-lv1 {
-  font-size: clamp(53, 146, 375, 1440);
+  font-size: fz_clamp(53, 146, 375, 1440);
   font-family: $font_lora;
   font-weight: 500;
   line-height: 1.5;
@@ -20,13 +19,13 @@
 
 .heading-lv2,
 .subtitle {
-  font-size: clamp(26, 42, 375, 1440);
+  font-size: fz_clamp(26, 42, 375, 1440);
   font-weight: 500;
   line-height: 1.5;
 }
 
 p {
-  font-size: clamp(14, 16, 375, 1440);
+  font-size: fz_clamp(14, 16, 375, 1440);
   font-weight: 400;
   line-height: 1.8;
 }
@@ -41,7 +40,7 @@ p {
 }
 @include mq(md) {
   .num {
-    font-size: clamp(60, 103, 768, 1440);
+    font-size: fz_clamp(60, 103, 768, 1440);
   }
 }
 
@@ -51,7 +50,7 @@ p {
 
 /* セクションの間隔 --------------- */
 .section + .section {
-  margin-block-start: clamp(140, 288, 375, 1440);
+  margin-block-start: fz_clamp(140, 288, 375, 1440);
 }
 
 /* conteiner 7列のグリッド --------------- */
@@ -159,7 +158,7 @@ p {
 
 /* hero --------------- */
 .hero {
-  margin-block-start: clamp(0, 15, 375, 1440);
+  margin-block-start: fz_clamp(0, 15, 375, 1440);
   .text {
     display: contents;
   }
@@ -177,7 +176,7 @@ p {
     grid-column: 1 / -1;
     grid-row: 1;
     height: 588px;
-    margin-block-start: clamp(40, 130, 375, 1440);
+    margin-block-start: fz_clamp(40, 130, 375, 1440);
   }
   .photo02 {
     grid-column: 3 / -1;
@@ -273,7 +272,7 @@ p {
 /* Moreリンク */
 .more {
   display: block;
-  margin-block-start: clamp(25, 45, 375, 1440);
+  margin-block-start: fz_clamp(25, 45, 375, 1440);
   font-family: $font_lora;
   font-size: 16px;
   font-weight: 400;
@@ -411,7 +410,7 @@ p {
   height: 360px;
 }
 .posts h3 {
-  font-size: clamp(16, 18, 375, 1440);
+  font-size: fz_clamp(16, 18, 375, 1440);
   font-weight: 400;
   margin-block-start: 12px;
 }
@@ -504,7 +503,7 @@ p {
 .decor::after,
 .sec01 .container::after {
   content: url('../image/accent.svg');
-  width: clamp(47, 61, 375, 1440);
+  width: fz_clamp(47, 61, 375, 1440);
   height: auto;
   position: absolute;
   line-height: 0;
@@ -547,7 +546,7 @@ p {
   }
   .sec01 .container::after {
     display: revert;
-    width: clamp(47, 100, 375, 1440);
+    width: fz_clamp(47, 100, 375, 1440);
     right: 21.26%;
     bottom: 65.75%;
     transform: rotate(-153deg);
@@ -560,7 +559,7 @@ p {
 }
 @include mq(lg) {
   .sec03.decor::after {
-    width: clamp(47, 80, 375, 1440);
+    width: fz_clamp(47, 80, 375, 1440);
     right: 65.56%;
     bottom: -4.85%;
     transform: rotate(138deg);
@@ -573,7 +572,7 @@ p {
   padding-block: 200px;
 }
 .cta-btn {
-  font-size: clamp(20, 30, 375, 1440);
+  font-size: fz_clamp(20, 30, 375, 1440);
   font-weight: 500;
   display: flex;
   &::before {
@@ -604,11 +603,11 @@ p {
 }
 /* ロゴ */
 .logo {
-  width: clamp(120, 200, 375, 1440);
+  width: fz_clamp(120, 200, 375, 1440);
 }
 /* menu */
 .menu {
-  font-size: clamp(14, 18, 375, 1440);
+  font-size: fz_clamp(14, 18, 375, 1440);
   display: flex;
   gap: 2em;
 
